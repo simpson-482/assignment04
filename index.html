@@ -10,7 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <link rel= "stylesheet" href= "./assets/css/style.css">
+    <link rel= "stylesheet" href= "./style.css">
     <link href="https://fonts.googleapis.com/css?family=Mukta&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -25,13 +25,17 @@
     </div>
     <div class="row">
       <div class="paragraph col-md-12">
-          <p>Try to answer the following coding related questions within the time limit.  Keep in mind wrong answer will penalize your score by -1 and time by -10 sec</p>
+          <p>Try to answer the following coding related questions within the time limit.  Keep in mind wrong answers will penalize your score by -1 and time by -10 sec</p>
       </div>
     </div>
     <div class="row">
         <div class="card-footer col-md-12">  
-          <button id="next" class="btn">Start Quiz!</button>
+          <button id="start" class="btn">Start Quiz!</button>
         </div>
+        <div id="jimButton"></div>
+        <div id="myQuestion"></div>
+        <div id="myChoices"></div>
+        <div id="myResult"></div>
     </div>
     </div>
     <script src="script.js"></script>

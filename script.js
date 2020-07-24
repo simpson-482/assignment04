@@ -1,5 +1,5 @@
 // Assignment Code
-var generateBtn = document.querySelector("#generate");
+var startBtn = document.querySelector("#start");
 
 let specialChars   = ["!","#","$","%","&","'","\,","(",")","*","+","-",".","/",":",";","<",">","=","?","@","[","]","\"","^","_","`","{","}","|","~"];
 let lowerChars = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
@@ -114,14 +114,38 @@ function generatePassword() {
 
 
 // Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+function startTheQuiz() {
 
-  passwordText.value = password;
+    // let myNewButton = document.getElementById("jimButton");
+    // let jb = document.createElement('button');
+    // jb.setAttribute('class', 'btn');
+    // jb.innerHTML = "Jim Brown";
+    // myNewButton.appendChild(jb);
 
+    let myNewQuestion = document.getElementById("myQuestion");
+    let quest1 = document.createElement('h3');
+    quest1.setAttribute('class', '');
+    quest1.innerHTML = "Which of the following was a Cleveland Browns running back?";
+    myNewQuestion.appendChild(quest1);
+
+    let myNewChoice = document.getElementById("myChoices");
+    let choice1 = document.createElement('button');
+    choice1.setAttribute('class', 'btn');
+    choice1.innerHTML = "a. Jim Brown";
+    myNewChoice.appendChild(choice1);
+
+    let myNewChoice2 = document.getElementById("myChoices");
+    let choice2 = document.createElement('button');
+    choice2.setAttribute('class', 'btn');
+    choice2.innerHTML = "b. Barney Rubble";
+    myNewChoice.appendChild(choice2);
+
+    
 }
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+// Add event listener to start button
+startBtn.addEventListener("click", startTheQuiz);
+
+// document.querySelector("#start").addEventListener("click", startTheQuiz);
+
 
