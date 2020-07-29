@@ -1,43 +1,138 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
   <head>
-    <meta charset="UTF-8" />
+
+   <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
     <title>Coding Quiz Challenge</title>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
     <link rel= "stylesheet" href= "./style.css">
+
     <link href="https://fonts.googleapis.com/css?family=Mukta&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css" />
+
   </head>
+
+ 
+
   <body>
-    <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-      <header>
-        <h1>Coding Quiz Challenge</h1>
-      </header>
-      </div>
-    </div>
-    <div class="row">
-      <div class="paragraph col-md-12">
-          <p>Try to answer the following coding related questions within the time limit.  Keep in mind wrong answers will penalize your score by -1 and time by -10 sec</p>
-      </div>
-    </div>
-    <div class="row">
-        <div class="card-footer col-md-12">  
-          <button id="start" class="btn">Start Quiz!</button>
+
+ 
+
+    <div id = "topStuff" class="container">
+
+        <div class="row">
+
+ 
+
+            <div class="col-md-12">
+
+                <header>
+
+                    <h1>Coding Quiz Challenge</h1>
+
+                </header>
+
+            </div>
+
+ 
+
         </div>
-        <div id="jimButton"></div>
-        <div id="myQuestion"></div>
-        <div id="myChoices"></div>
-        <div id="myResult"></div>
+
+ 
+
+        <div class="row">
+
+            <div class="paragraph col-md-12">
+
+                <h4>Try to answer the following coding related questions within the time limit.  Keep in mind wrong answers will take 10 seconds off the timer and penalize your score by 10 points.</h4>
+
+            </div>
+
+        </div>
+
+ 
+
+        <div>
+
+            <div class="card-footer col-md-12">
+
+                <button id="start" class="btn">Start</button>
+
+            </div>
+
+        </div>
+
     </div>
+
+ 
+
+    <br>
+
+    <div id="myQuestion"></div>
+
+    <br>
+
+ 
+
+    <br>
+
+    <div align="center">
+
+        <textarea id="myTextArea" rows="1" cols="20" style="display:none;"></textarea>
+
+        <button id="myInitials" class='btn' style="color:white;font-size:20px;text-align:center;font-style:italic;display:none;">Submit initials</button>
+
     </div>
+
+    <br>
+
+ 
+
+    <div id="myTimer" class="timerRow" style="color:red;font-size:30px;text-align:center;font-style:italic;"></div>
+
+ 
+
+    <div>
+
+        <div id="choices"></div>
+
+    </div>
+
+ 
+
+    <div>
+
+        <br>
+
+        <h3 id="result"></h3>
+
+    </div>
+
+ 
+
     <script src="script.js"></script>
+
+ 
+
   </body>
+
 </html>
+ 
