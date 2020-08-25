@@ -420,7 +420,7 @@ function startTheQuiz() {
 
     choice5.setAttribute('class', 'btn');
 
-    choice5.innerHTML = "e. Bill Thomas Jim Jon Jeff";
+    choice5.innerHTML = "e. Walter Payton";
 
     choice5.style.display = "block";
 
